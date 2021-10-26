@@ -35,7 +35,26 @@ public class HomeController {
 			return new ResponseData(-1,-1);
 		}
 	}
+	/*
+	@PostMapping("/{code}")
+	public ResponseData FetchNumber(@PathVariable("code") int code) {
+		try {
+		data fcode = jpa.getById(code);
+		int oldValue = fcode.getValue();
+		int newValue = this.service.getNewCode(fcode.getValue());
+		Thread.sleep(50000);
+		fcode.setValue(newValue);
+		jpa.save(fcode);
+		return new ResponseData(oldValue,newValue);
+		}catch(Exception e) {
+			e.printStackTrace();
+			return new ResponseData(-1,-1);
+		}
+	}
 	
+	
+	
+	*/
 
 
 }
